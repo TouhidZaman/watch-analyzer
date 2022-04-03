@@ -1,27 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CustomLink from "./CustomLink/CustomLink";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
    return (
       <nav className={styles.navbar}>
          <div className={styles.navContainer}>
-            <h1>Watch Analyzer</h1>
-            <ul className={styles.navLinks}>
+            <h1>
+               <Link to="/">Watch Analyzer</Link>
+            </h1>
+            <ul className={styles.navCustomLinks}>
                <li>
-                  <Link to="/home">Home</Link>
+                  <CustomLink to="/" activeStyle={styles.activeStyle}>
+                     Home
+                  </CustomLink>
                </li>
                <li>
-                  <Link to="/reviews">Reviews</Link>
+                  <CustomLink to="/reviews" activeStyle={styles.activeStyle}>
+                     Reviews
+                  </CustomLink>
                </li>
                <li>
-                  <Link to="/dashboard">Dashboard</Link>
+                  <CustomLink to="/dashboard" activeStyle={styles.activeStyle}>
+                     Dashboard
+                  </CustomLink>
                </li>
                <li>
-                  <Link to="/blogs">Blogs</Link>
+                  <CustomLink to="/blogs" activeStyle={styles.activeStyle}>
+                     Blogs
+                  </CustomLink>
                </li>
                <li>
-                  <Link to="/about">About</Link>
+                  <CustomLink to="/about" activeStyle={styles.activeStyle}>
+                     About
+                  </CustomLink>
                </li>
             </ul>
          </div>

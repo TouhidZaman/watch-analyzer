@@ -57,4 +57,15 @@
 }
 
 /* Adjustments For Mobile view  */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .navContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navCustomLinks a {
+        font-weight: 500;
+        font-size: 16px;
+        margin-left: 5px;
+    }
+}

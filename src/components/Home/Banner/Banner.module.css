@@ -2,7 +2,7 @@
 .topBanner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+    gap: 30px;
     height: calc(100vh - 80px);
     align-items: center;
 }
@@ -34,6 +34,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .bannerImageArea .bannerImage {
@@ -104,12 +105,12 @@
 @media screen and (max-width: 768px) {
     .topBanner {
         grid-template-columns: 1fr;
-        row-gap: 30px;
-        margin-top: 30px;
+        margin-top: 60px;
+        height: auto;
+        gap: 60px;
     }
 
     .bannerInfo {
-        align-items: center;
         text-align: center;
         order: 1;
     }
@@ -124,13 +125,18 @@
         margin-bottom: 16px;
     }
 
+    .bannerImageArea {
+        margin-bottom: 0px;
+    }
+
     .bannerImageArea .bannerImage {
         width: 257px;
         height: 200px;
     }
 
     .bannerImageArea .bannerBg {
-        width: 257px;
+        width: 240px;
+        height: 257px;
     }
 }
 

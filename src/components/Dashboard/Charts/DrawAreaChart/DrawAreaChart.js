@@ -3,6 +3,7 @@ import {
    Area,
    AreaChart,
    CartesianGrid,
+   Legend,
    ResponsiveContainer,
    Tooltip,
    XAxis,
@@ -23,6 +24,8 @@ const DrawAreaChart = ({ data, xAxis, firstDataKey, secondDataKey, ...props }) =
             <XAxis dataKey={xAxis} />
             <YAxis />
             <Tooltip />
+            <Legend verticalAlign="bottom" height={36} wrapperStyle={{ lineHeight: '50px' }}/>
+
             <Area
                type="monotone"
                dataKey={firstDataKey}

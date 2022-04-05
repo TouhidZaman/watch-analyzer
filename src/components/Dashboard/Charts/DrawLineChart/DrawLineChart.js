@@ -1,5 +1,5 @@
 import React from "react";
-import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 const DrawLineChart = ({ data, xAxis, dataKey, ...props }) => {
    const margin = {
@@ -14,6 +14,8 @@ const DrawLineChart = ({ data, xAxis, dataKey, ...props }) => {
             <XAxis dataKey={xAxis} />
             <YAxis />
             <Tooltip />
+            <Legend verticalAlign="bottom" height={36} wrapperStyle={{ lineHeight: '50px' }}/>
+
             <Line
                type="monotone"
                dataKey={dataKey}

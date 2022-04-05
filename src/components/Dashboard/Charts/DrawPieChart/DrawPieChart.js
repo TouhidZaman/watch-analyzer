@@ -1,11 +1,12 @@
 import React from "react";
-import { Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
+import { Legend, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 
 const DrawPieChart = ({ data, firstDataKey, secondDataKey, ...props }) => {
    return (
       <ResponsiveContainer width="100%" height={250}>
          <PieChart {...props}>
             <Tooltip />
+            {/* <Legend verticalAlign="bottom" height={36} wrapperStyle={{ lineHeight: '60px' }}/> */}
 
             <Pie
                data={data}

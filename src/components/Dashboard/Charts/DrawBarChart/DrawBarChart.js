@@ -3,6 +3,7 @@ import {
    Bar,
    BarChart,
    CartesianGrid,
+   Legend,
    ResponsiveContainer,
    Tooltip,
    XAxis,
@@ -23,6 +24,7 @@ const DrawBarChart = ({ data, xAxis, firstDataKey, secondDataKey, ...props }) =>
             <XAxis dataKey={xAxis} />
             <YAxis />
             <Tooltip />
+            <Legend verticalAlign="bottom" height={36} wrapperStyle={{ lineHeight: '50px' }}/>
             <Bar
                type="monotone"
                dataKey={firstDataKey}

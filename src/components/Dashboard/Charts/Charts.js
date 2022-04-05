@@ -8,7 +8,7 @@ import DrawPieChart from "./DrawPieChart/DrawPieChart";
 
 const Charts = () => {
    const [chartData] = useChartData(); //custom hook
-   console.log(chartData);
+   
    return (
       <div className={styles.charts}>
          <div className={styles.chartsContainer}>

@@ -9,7 +9,7 @@ const Navbar = () => {
       { id: 2, path: "/reviews", name: "Reviews" },
       { id: 3, path: "/dashboard", name: "Dashboard" },
       { id: 4, path: "/blogs", name: "Blogs" },
-      { id: 4, path: "/about", name: "About" },
+      { id: 5, path: "/about", name: "About" },
    ];
    return (
       <nav className={styles.navbar}>
@@ -19,7 +19,7 @@ const Navbar = () => {
             </h1>
             <ul className={styles.navCustomLinks}>
                {redirects.map((redirect) => (
-                  <li>
+                  <li key={redirect.id}>
                      <CustomLink to={redirect.path} activeStyle={styles.activeStyle}>
                         {redirect.name}
                      </CustomLink>

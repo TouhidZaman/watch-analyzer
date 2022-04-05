@@ -23,6 +23,10 @@
 .cartBody {
     margin-top: 10px;
 }
+.ratingCount {
+    margin-left: 5px;
+    color: goldenrod;
+}
 
 /* .cartBody p {
     color: dimgray;

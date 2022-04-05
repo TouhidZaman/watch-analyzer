@@ -5,7 +5,7 @@
 Visit Watch Analyzer live website for more info: [https://watch-analyzer.netlify.app/](https://watch-analyzer.netlify.app/)
 
 ## Project Description
-This is a simple watch analyzer website which is created using react , fake reviews json data, react-router and rechart (A library for drawing charts). In this project you can find reviews for watch and inside the dashboard you will find the Analytics of watch. this are the basics staffs you can do in this project
+This is a simple watch analyzer website which is created using react , fake reviews json data, react-router, react-rating and rechart (A library for drawing charts). In this project you can find reviews for watch and inside the dashboard you will find the Analytics of watch. this are the basics staffs you can do in this project
 
 * Technologies used in this project
   - react@18
@@ -13,6 +13,7 @@ This is a simple watch analyzer website which is created using react , fake revi
   - custom-hooks
   - fetch
   - rechart
+  - react-rating
   - font-awesome-icons
   - vanilla-css
 

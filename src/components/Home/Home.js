@@ -1,7 +1,9 @@
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import useReviews from "../../hooks/useReviews";
-import Reviews from "../Reviews/Reviews";
+import Reviews from "../AllReviews/Reviews/Reviews";
 import Banner from "./Banner/Banner";
 import styles from "./Home.module.css";
 
@@ -26,7 +28,7 @@ const Home = () => {
                   onClick={seeMoreReviewsHandler}
                >
                   <p>See more reviews</p>
-                  {/* <FontAwesomeIcon icon={faSearch} /> */}
+                  <FontAwesomeIcon icon={faSearch} />
                </button>
             </div>
          </div>

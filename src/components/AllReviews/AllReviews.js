@@ -1,6 +1,6 @@
 import React from 'react';
 import useReviews from '../../hooks/useReviews';
-import Reviews from '../Reviews/Reviews';
+import Reviews from './Reviews/Reviews';
 import styles from './AllReviews.module.css';
 
 const AllReviews = () => {

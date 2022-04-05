@@ -2,4 +2,40 @@
     max-width: 1200px;
     padding: 0 30px;
     margin: 30px auto;
+    color: dimgray;
+}
+
+.about>h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projectInfo {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.authorInfo a {
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/* Adjustments For Mobile view  */
+@media screen and (max-width: 768px) {
+    .about>h2 {
+        margin-bottom: 20px;
+    }
+
+    .projectInfo {
+        max-width: 90%;
+    }
+
+    .projectInfo p {
+        text-align: justify;
+    }
+
+    .authorInfo {
+        max-width: 90%;
+    }
 }

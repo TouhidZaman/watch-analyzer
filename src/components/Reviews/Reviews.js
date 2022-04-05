@@ -1,13 +1,16 @@
 import React from "react";
+import useReviews from "../../hooks/useReviews";
 import styles from './Reviews.module.css';
 
 const Reviews = () => {
+   const [reviews, setReviews] = useReviews();
    return (
       <div className={styles.reviews}>
-         <h3>This is Reviews Page</h3>
-         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rem
-            vel accusamus natus non quod reiciendis iure ipsa ad dolor.
+         <h2>What Our customers say !</h2>
+         <p> total reviews: 
+            {
+               reviews.length
+            }
          </p>
       </div>
    );

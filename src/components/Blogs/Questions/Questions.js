@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Questions.module.css";
-import logo from "../../../logo.svg";
 import Question from "./Question/Question";
 
 const Questions = () => {

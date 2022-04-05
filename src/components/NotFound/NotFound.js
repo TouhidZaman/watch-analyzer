@@ -4,7 +4,7 @@ import styles from './NotFound.module.css'
 const NotFound = () => {
     return (
         <div className={styles.notFound}>
-            <h1>Ops ! the page you are looking for is not found</h1>
+            <h2>Ops ! the page you are looking for is not found</h2>
         </div>
     );
 };

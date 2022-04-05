@@ -1,5 +1,13 @@
 .notFound {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 30px auto;
+}
+
+.notFound>h2 {
     color: dimgray;
     max-width: 70%;
-    margin: 0 auto;
+    text-align: center;
+    margin: 50px auto;
+
 }

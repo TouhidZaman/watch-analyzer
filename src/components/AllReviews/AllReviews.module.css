@@ -1,0 +1,12 @@
+.allReviews {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 30px auto;
+}
+
+.allReviews>h2 {
+    text-align: center;
+    /* color: #3743568a; */
+    color: dimgray;
+    margin-bottom: 30px;
+}

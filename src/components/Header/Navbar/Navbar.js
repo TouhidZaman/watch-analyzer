@@ -6,7 +6,7 @@ import styles from "./Navbar.module.css";
 const Navbar = () => {
    const redirects = [
       { id: 1, path: "/", name: "Home" },
-      { id: 2, path: "/reviews", name: "Reviews" },
+      { id: 2, path: "/all-reviews", name: "Reviews" },
       { id: 3, path: "/dashboard", name: "Dashboard" },
       { id: 4, path: "/blogs", name: "Blogs" },
       { id: 5, path: "/about", name: "About" },

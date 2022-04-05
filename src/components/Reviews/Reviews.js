@@ -1,17 +1,13 @@
 import React from "react";
-import useReviews from "../../hooks/useReviews";
-import styles from './Reviews.module.css';
+import Review from "./Review/Review";
+import styles from "./Reviews.module.css";
 
-const Reviews = () => {
-   const [reviews, setReviews] = useReviews();
+const Reviews = ({ reviews }) => {
    return (
-      <div className={styles.reviews}>
-         <h2>What Our customers say !</h2>
-         <p> total reviews: 
-            {
-               reviews.length
-            }
-         </p>
+      <div className={styles.reviewsContainer}>
+         {reviews.map((review) => (
+            <Review key={review.id} review={review} />
+         ))}
       </div>
    );
 };

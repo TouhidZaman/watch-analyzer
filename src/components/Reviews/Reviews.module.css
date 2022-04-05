@@ -1,11 +1,23 @@
-.reviews {
-    max-width: 1200px;
-    padding: 0 30px;
-    margin: 30px auto;
+.reviewsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
-.reviews>h2 {
-    text-align: center;
-    /* color: #3743568a; */
-    color: dimgray;
-    margin-bottom: 30px;
+
+/* Adjustments For Tablet View  */
+@media screen and (max-width: 992px) {
+    .reviewsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Adjustments For Mobile view  */
+@media screen and (max-width: 768px) {
+    .reviewsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

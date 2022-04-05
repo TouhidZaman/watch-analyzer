@@ -1,0 +1,49 @@
+.reviewContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.cart {
+    /* height: 250px; */
+    width: 350px;
+    background-color: white;
+    box-shadow: 1px 2px 3px rgb(0 0 0 / 0.3);
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: initial;
+    color: dimgray;
+}
+
+.cartHeader {
+    display: flex;
+}
+
+.cartBody {
+    margin-top: 10px;
+}
+
+/* .cartBody p {
+    color: dimgray;
+} */
+
+.cartHeader img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.profileInfo {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Adjustments For Mobile view  */
+@media screen and (max-width: 768px) {
+    .cart {
+        width: 100%;
+    }
+}

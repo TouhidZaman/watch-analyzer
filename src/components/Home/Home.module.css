@@ -4,5 +4,47 @@
     margin: 0 auto;
 }
 
+/* review section  */
+.reviewsSection {
+    margin: 50px 0;
+}
+.reviewsSection h2 {
+    margin-bottom: 50px;
+    color: dimgray;
+}
+.reviewsAction {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.seeMoreReviewsButton {
+    margin: 0 5px;
+    background: none;
+    border: none;
+    font-weight: 700;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+}
+.seeMoreReviewsButton p {
+    margin-right: 7px;
+}
+.seeMoreReviewsButton:hover {
+    color: orange;
+}
+
+.seeMoreReviewsButton:active {
+    color: orangered;
+}
+
+
 /* Adjustments For Mobile view  */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .reviewsSection h2 {
+        margin-bottom: 30px;
+    }
+}

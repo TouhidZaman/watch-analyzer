@@ -1,0 +1,157 @@
+/* TOP BANNER  */
+.topBanner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    height: calc(100vh - 80px);
+    align-items: center;
+}
+
+.bannerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    align-items: center;
+}
+
+.bannerInfo h1 {
+    color: #3A3A3A;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 70px;
+}
+
+.bannerInfo p {
+    color: #3A3A3A;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0 30px;
+}
+
+.bannerImageArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bannerImageArea .bannerImage {
+    width: 400px;
+    height: 280px;
+    z-index: 1;
+    /* object-fit: cover; */
+}
+
+.bannerImageArea .bannerBg {
+    width: 4500px;
+    height: 400px;
+    position: absolute;
+    animation: bannerBgAnimations 2s ease-in infinite forwards;
+}
+
+/* Live demo button styles  */
+.liveDemoButton {
+    background: -webkit-linear-gradient(#4cfd208f, #374356);
+    /* background: aliceblue; */
+    box-shadow: 0 3px 3px lightgreen;
+    border-radius: 25px;
+    padding: 12px 30px;
+    outline: none;
+    border: none;
+    color: white;
+    /* color: #3743568a; */
+    font-weight: 700;
+    animation: buttonAnimation 3s ease-in infinite forwards;
+
+}
+
+.liveDemoButton:hover {
+    cursor: pointer;
+}
+
+.liveDemoButton:active {
+    background: #374356;
+}
+
+/* Adjustments For Tablet View  */
+@media screen and (max-width: 992px) {
+    .topBanner {
+        grid-template-columns: 350px 300px;
+        justify-content: center;
+    }
+
+    .bannerInfo h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .bannerInfo p {
+        font-size: 14px;
+    }
+
+    .bannerImageArea .bannerImage {
+        width: 300px;
+        height: 250px;
+    }
+
+    .bannerImageArea .bannerBg {
+        width: 300px;
+    }
+}
+
+/* Adjustments For Mobile view  */
+@media screen and (max-width: 768px) {
+    .topBanner {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        margin-top: 30px;
+    }
+
+    .bannerInfo {
+        align-items: center;
+        text-align: center;
+        order: 1;
+    }
+
+    .bannerInfo h1 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .bannerInfo p {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .bannerImageArea .bannerImage {
+        width: 257px;
+        height: 200px;
+    }
+
+    .bannerImageArea .bannerBg {
+        width: 257px;
+    }
+}
+
+/* BANNER BG ANIMATIONS  */
+@keyframes bannerBgAnimations {
+    to {
+        transform: scale(1);
+    }
+
+    from {
+        transform: scale(1.1);
+    }
+}
+
+/* Button Animation  */
+@keyframes buttonAnimation {
+    to {
+        transform: translateX(0);
+    }
+
+    from {
+        transform: translateX(5px) scale(1.1);
+    }
+}

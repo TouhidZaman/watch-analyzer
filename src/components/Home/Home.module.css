@@ -1,5 +1,8 @@
 .home {
     max-width: 1200px;
     padding: 0 30px;
-    margin: 30px auto;
+    margin: 0 auto;
 }
+
+/* Adjustments For Mobile view  */
+@media screen and (max-width: 768px) {}
